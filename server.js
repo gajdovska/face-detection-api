@@ -11,17 +11,17 @@ const signin=require('./controllers/signin');
 const profile=require('./controllers/profile');
 const image=require('./controllers/image');
 
-const environment=require('./environment');
+const environment = require('./environment');
 
 const db = knex({
-  client: "pg",
-  connection: {
-    host: environment.databaseHost,
-    user: environment.databaseUsername,
-    password: environment.databasePassword,
-    port: environment.databasePort,
-    database: environment.databaseName
-  }
+        client: "pg",
+        connection: {
+        host: environment.databaseHost,
+        user: environment.databaseUsername,
+        password: environment.databasePassword,
+        port: environment.databasePort,
+        database: environment.databaseName
+    }
 });
 
 app.use(bodyParser.json()); 
