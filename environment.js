@@ -14,4 +14,6 @@ if (process.env.NODE_ENV == 'development'){
     environment.databasePassword = process.env.DATABASE_PASSWORD;
 }
 
-export default environment;
+module.exports={
+    environment
+};
