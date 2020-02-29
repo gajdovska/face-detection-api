@@ -32,7 +32,7 @@ const handleRegister=(req,res,db,bcrypt)=>{
     .then(trx.commit)
     .catch(trx.rollback)
     })
-    .catch(err=>res.json('unable to register'))
+    .catch(err=>res.json(err)); // kje morame ovaka
 }
 module.exports={
     handleRegister:handleRegister
