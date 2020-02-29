@@ -1,0 +1,32 @@
+{
+  "name": "smart-brain-api",
+  "version": "1.0.0",
+  "homepage": "http://gajdovska.github.io/face-detection",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "clarifai": "^2.9.1",
+    "cors": "^2.8.5",
+    "expres": "0.0.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.10",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.2",
+    "react-scripts": "^3.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
